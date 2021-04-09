@@ -1,4 +1,4 @@
-# Powercord twemoji
+# TwemojiEverywhere
 
 A powercord plugin that brings Twemoji to places like the channel list or nicknames
 
