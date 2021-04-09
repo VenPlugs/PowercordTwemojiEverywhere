@@ -1,13 +1,5 @@
-# Powercord Reacter
+# Powercord twemoji
 
-React to messages quickly by executing a command. Supports both custom emotes and default emojis. You can also specify a name to react with all matching emotes.
+A powercord plugin that brings Twemoji to places like the channel list or nicknames
 
-I made this because manually reacting is painfully laggy for me when reacting with multiple reactions very quickly
-
-[Preview Video](https://pantsu.review/jCpwPmJ.mp4)
-
-## Usage
-
-```
-.react <MESSAGE_ID> <EMOJI | CUSTOM_EMOTE | EMOTE_NAME>
-```
+![Screenshot](https://pantsu.review/7j5289w.png) ![Screenshot](https://owo.is-very.moe/5uyJVd5.png)
