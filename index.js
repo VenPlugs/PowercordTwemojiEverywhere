@@ -2,7 +2,7 @@ const { Plugin } = require("powercord/entities");
 const { get } = require("powercord/http");
 const { runInThisContext } = require("vm");
 
-module.exports = class Reacter extends Plugin {
+module.exports = class TwemojiEverywhere extends Plugin {
   async startPlugin() {
     await get(
       "https://twemoji.maxcdn.com/v/latest/twemoji.min.js"
