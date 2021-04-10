@@ -3,7 +3,10 @@ const twemoji = require("./twemoji.min.js");
 
 module.exports = class TwemojiEverywhere extends Plugin {
   async startPlugin() {
-    this.observer = new MutationObserver(() => this.init());
+    this.observer = new MutationObserver(record => {
+      if (!record.target.classList) return;
+      this.init();
+    });
     this.observer.observe(document.head, {
       childList: true,
       subtree: true,
