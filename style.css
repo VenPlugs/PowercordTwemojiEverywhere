@@ -1,0 +1,4 @@
+img.emoji[src^="https://twemoji"]
+{
+  padding: 0 3px;
+}

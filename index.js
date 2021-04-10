@@ -11,8 +11,9 @@ module.exports = class TwemojiEverywhere extends Plugin {
       childList: true,
       subtree: true,
     });
+    this.loadStylesheet("style.css");
   }
-
+  
   pluginWillUnload() {
     if (this.observer) this.observer.disconnect();
   }
