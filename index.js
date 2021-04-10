@@ -4,10 +4,10 @@ const twemoji = require("./twemoji.min.js");
 module.exports = class TwemojiEverywhere extends Plugin {
   async startPlugin() {
     this.observer = new MutationObserver(record => {
-      if (!record.target.classList) return;
+      if (record[0].target.classList === null) return;
       this.init();
     });
-    this.observer.observe(document.head, {
+    this.observer.observe(document.body, {
       childList: true,
       subtree: true,
     });
@@ -18,7 +18,9 @@ module.exports = class TwemojiEverywhere extends Plugin {
   }
 
   init() {
-    this.log("Detected change, reapplying twemoji");
+    if (typeof this.timeout !== "undefined") return;
+    this.timeout = setTimeout(() => delete this.timeout, 1000);
+    // this.log("Detected change, reapplying twemoji");
     twemoji.parse(document.body);
   }
 };
