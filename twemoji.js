@@ -1,4 +1,4 @@
-/* Heavily modified version of https://twemoji.maxcdn.com/v/latest/twemoji.min.js
+/* Heavily modified version of https://twemoji.maxcdn.com/v/latest/twemoji.js
  *
  * Original License:
  * Copyright (c) 2018 Twitter, Inc and other contributors
