@@ -1,6 +1,6 @@
 {
   "name": "TwemojiEverywhere",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Applies twemoji to places not usually affected by it, such as the channel list or nicknames",
   "author": "Vendicated",
   "license": "GPL-3.0"

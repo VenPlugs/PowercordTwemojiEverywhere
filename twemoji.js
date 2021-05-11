@@ -82,7 +82,7 @@ function parseNode(node) {
         img = new Image();
         img.src = src;
         img.alt = rawText;
-        img.className = "emoji";
+        img.className = "emoji twemoji-everywhere";
         img.height = img.width = 72;
         img.setAttribute("draggable", "false");
         img.onerror = function () {
