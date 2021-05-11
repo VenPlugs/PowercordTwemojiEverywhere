@@ -16,7 +16,7 @@
  */
 
 const { Plugin } = require("powercord/entities");
-const twemoji = require("./twemoji.min.js");
+const twemoji = require("./twemoji.js");
 
 module.exports = class TwemojiEverywhere extends Plugin {
   async startPlugin() {
