@@ -1,4 +1,3 @@
-img.emoji[src^="https://external-content.duckduckgo.com/iu/?u=https://twemoji"]
-{
+img.emoji {
   padding: 0 3px;
 }

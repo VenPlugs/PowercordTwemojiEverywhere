@@ -20,13 +20,13 @@ const twemoji = require("./twemoji.min.js");
 
 module.exports = class TwemojiEverywhere extends Plugin {
   async startPlugin() {
-    this.observer = new MutationObserver((record) => {
+    this.observer = new MutationObserver(record => {
       if (record[0].target.classList === null) return;
       this.init();
     });
     this.observer.observe(document.body, {
       childList: true,
-      subtree: true,
+      subtree: true
     });
     this.loadStylesheet("style.css");
   }
@@ -36,7 +36,6 @@ module.exports = class TwemojiEverywhere extends Plugin {
   }
 
   init() {
-    // this.log("Detected change, reapplying twemoji");
-    twemoji.parse(document.body);
+    twemoji(document.body);
   }
 };

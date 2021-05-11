@@ -1,8 +1,6 @@
 # TwemojiEverywhere
 
-Brings twemoji to places not usually themed by it, like the channel list or nicknames. This plugin is very hacky, PRs/advice very welcome :3
-
-NOTE: For whatever reason discord crashes in specific group chats when using this plugin. I'm not sure why and this crash is coming from internal discord stuff, but I'll try to figure it out. If your discord crashes, deactivate this plugin and please send me a dm with details on what you were doing
+Brings twemoji to places not usually themed by it, like the channel list or nicknames
 
 | Before                                         | After                                      |
 | ---------------------------------------------- | ------------------------------------------ |
